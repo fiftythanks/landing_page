@@ -1,0 +1,53 @@
+/* General rules */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap'); /* Import the Roboto font from Google */    
+
+html {
+  padding: 0;
+}
+body {
+  font-family: Roboto;
+  color: #fff;
+  background-color: #1f2937;
+  padding: 0 calc((100vw - 70rem) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: rgb(159, 159, 159);
+    }
+  }
+}
+
+/* Specific rules */
+
+nav {
+  & > ul {
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+
+    /* Flex containter */
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+
+    & a {
+      font-size: 18px;
+      color: #e5e7eb;
+    }
+
+    & #logo {
+      margin-right: auto;
+      & a {
+        font-size: 24px;
+        color: #f9faf8;
+      }
+    }
+  }
+}
