@@ -8,10 +8,15 @@ body {
   font-family: Roboto;
   color: #fff;
   background-color: #1f2937;
-  padding: 0 calc((100vw - 70rem) / 2);
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  & > * {
+    padding: 0 calc((100vw - 70rem) / 2);
+  }
 
   & a {
     text-decoration: none;
@@ -53,7 +58,7 @@ nav {
 
 /* --Main rules-- */
 /* Mainhead rules */
-#head {
+#mainhead {
   font-size: 18px;
   color: #e5e7eb;
   display: flex;
@@ -83,7 +88,7 @@ nav {
   background-color: gray;
 }
 
-#signup_button {
+.signup_button {
   padding: 0.5rem 1.5rem;
   background-color: #3882f6;
   color: #f9faf8;
@@ -93,4 +98,32 @@ nav {
   &:hover {
     cursor: pointer;  
   } 
+}
+
+/* rand_info section rules */
+#rand_info {
+  background-color: #f9faf8;
+  color: #1f2937;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  & .image {
+    text-align: center;
+    width: 21ch;
+  }
+  
+  & .image_placeholder {
+    height: 21ch;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+  }
 }
