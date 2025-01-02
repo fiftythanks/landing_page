@@ -93,6 +93,7 @@ nav {
   padding: 0.5rem 1.5rem;
   background-color: #3882f6;
   color: #f9faf8;
+  font-size: 18px;
   border-width: 0;
   border-radius: 5px;
 
@@ -149,5 +150,37 @@ blockquote {
     text-align: right;
     font-style: normal;
     font-weight: bold;
+  }
+}
+
+/* Call to action section rules */
+#sign_up {
+  background-color: #f9faf8;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  & > div {
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0;
+  }
+
+  & .signup_button {
+    border: 2px solid #f9faf8;
   }
 }
